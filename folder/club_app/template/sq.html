@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .bg { 
+            background-color: seashell;
+  
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .button {
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 24px; /* Increased font size */
+            font-weight: bold; /* Bold font */
+            color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Square buttons */
+        .square-button {
+            width: 450px;
+            height: 340px;
+        }
+        .bigsquare-button {
+            width: 380px;
+            height: 600px;
+        }
+        .bbigsquare-button {
+            width: 420px;
+            height: 600px;
+        }
+        /* Rectangle buttons */
+        .rectangle-button {
+            width: 300px;
+            height: 110px;
+        }
+
+        /* Small rectangle button */
+        .small-rectangle-button {
+            width: 250px;
+            height: 110px;
+        }
+        .smrectangle-button {
+            width: 200px;
+            height: 110px;
+        }
+
+
+
+        .gusac-button {
+            background-image: url('static/gusac.jpg'); /* Path to GUSAC button background image */
+        }
+
+        .ieee-button {
+            background-image: url('static/ieee.jpg'); /* Path to IEEE button background image */
+        }
+
+        .nss-button {
+            background-image: url('static/nsss.jpg'); /* Path to NSS button background image */
+        }
+
+        .kalatriti-button {
+            background-image: url('static/kala.jpeg'); /* Path to KALATRITI button background image */
+        }
+
+        .mechanical-workshop-button {
+            background-image: url('static/mech.jpeg'); /* Path to Mechanical Workshop button background image */
+        }
+
+        .bio-technical-club-button {
+            background-image: url('static/bio.avif'); /* Path to Bio-technical Club button background image */
+        }
+
+        .ccms-button {
+            background-image: url('static/cc.png'); /* Path to CCMS button background image */
+        }
+
+
+    </style>
+</head>
+
+<body class="bg">
+    <div class="container">
+        <!-- Top row buttons -->
+        <a href="https://www.linkedin.com/company/gusac/?originalSubdomain=in">
+        <button class="button bbigsquare-button gusac-button">GUSAC</button>
+        </a>
+        <a href="https://edu.ieee.org/in-gitam-bengaluru/">
+        <button class="button bigsquare-button ieee-button">IEEE</button>
+        </a>
+        <a href="https://gimsr.gitam.edu/Facilities/nss">
+        <button class="button bigsquare-button nss-button">NSS</button>
+        </a>
+        <!-- Bottom row buttons -->
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/company/gitamkalakrithi/about/">
+            <button class="button smrectangle-button kalatriti-button">KALATRITI</button>
+            </a>
+            <a href="https://www.gitam.edu/courses/btech-in-mechanical-engineering">
+            <button class="button rectangle-button mechanical-workshop-button">MECHANICAL WORKSHOP</button>
+            </a>
+            <a href="https://www.linkedin.com/in/biotechnology-club-gitam-920893251/?originalSubdomain=in">
+            <button class="button rectangle-button bio-technical-club-button" >BIO-TECHNICAL CLUB</button>
+            </a>
+            <button class="button small-rectangle-button ccms-button" href="/index" >
+                <a href="/index" style="color: inherit; text-decoration: none;">C.C.M.S</a>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
